@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        tools:context=".ui.Cart.CartPaymentStatus">
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="visible" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".ui.Cart.CartPaymentStatus"
+            android:padding="20dp">
+            <!--  Failed: #ff6961
+                  Success: #77dd77
+              -->
+            <ImageView
+                android:id="@+id/androidAnim"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/avd_successanimation"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/text1" />
+
+            <TextView
+                android:layout_marginTop="30dp"
+                android:id="@+id/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/androidAnim"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:textColor="#77dd77"
+                android:text="Success !"
+                android:textAlignment="center"
+                android:textSize="35sp"
+                android:textFontWeight="400"
+                android:fontFamily="sans-serif-light" />
+
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/text"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:textColor="#303133"
+                android:text="Your payment was Successful"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif-light" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/done_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:cornerRadius="8dp"
+
+                android:paddingTop="18dp"
+                android:paddingBottom="18dp"
+
+                android:paddingStart="28dp"
+                android:paddingEnd="28dp"
+
+                style="@style/Widget.MaterialComponents.Button"
+
+                android:textSize="14sp"
+
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+
+                android:text="Go to login"
+
+                android:fontFamily="@font/roboto"
+                android:textFontWeight="700"
+                android:textStyle="bold"
+
+                android:textColor="@android:color/white"
+                android:backgroundTint="@android:color/black"
+                app:rippleColor="@color/colorPrimaryLightFaded"
+
+                app:layout_constraintTop_toBottomOf="@id/text1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</layout>

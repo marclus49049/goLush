@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Go Lush</string>
+    <string name="app_name_sub">Easy and Healthy Living !</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome_screen">Welcome to Go Lush </string>
+    <string name="login_title">Welcome\nBack !</string>
+    <string name="log_in">Log In</string>
+    <string name="register">Register</string>
+    <string name="forgot_password">Forgot password ?</string>
+    <string name="personalize_your_plan">Personalize Your Plan</string>
+    <string name="meat_amp_veggies"><![CDATA[Meat & Veggies]]></string>
+    <string name="veggies">Veggies</string>
+    <string name="snacks">Snacks</string>
+    <string name="_2_customize_your_plan_size">2. Customize your plan size</string>
+    <string name="recipes_per_week">Recipes per week</string>
+    <string name="number_of_people">Number of people</string>
+    <string name="start_cooking">Start Cooking</string>
+    <string name="ingredients">Ingredients</string>
+    <string name="title_testmodule">Module Title</string>
+</resources>

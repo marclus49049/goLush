@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00CB2C</color>
+    <color name="colorPrimaryFaded">#BF00CB2C</color>
+    <color name="colorPrimaryLightFaded">#5961ff60</color>
+    <color name="colorPrimaryDark">#009900</color>
+    <color name="colorPrimaryLight">#61ff60</color>
+    <color name="colorAccent">#d99d64</color>
+    <color name="colorText">#303133</color>
+    <color name="colorStatusBar">#B3000000</color>
+    <color name="colorBgTint">#80000000</color>
+    <color name="colorError">#FF6961</color>
+    <color name="mtrl_textinput_default_box_stroke_color">@android:color/black</color>
+    <color name="colorIcon">#ADADAC</color>
+    <color name="colorUselectedText">#808080</color>
+    <color name="placeholder_bg">#dddddd</color>
+    <color name="white">#FFFFFF</color>
+    <color name="colorAccent2">#FFC548</color>
+</resources>

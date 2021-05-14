@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation.xml"
+    app:startDestination="@id/loginSignUp">
+    <fragment
+        android:id="@+id/loginSignUp"
+        android:name="com.example.golush.ui.LoginSignUp"
+        android:label="LoginSignUp">
+        <action
+            android:id="@+id/action_loginSignUp_to_login"
+            app:destination="@id/login"
+            app:enterAnim="@anim/slide_up"
+            app:exitAnim="@anim/fade_exit"
+            app:popEnterAnim="@anim/fade_enter"
+            app:popExitAnim="@anim/slide_up_reverse"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_loginSignUp_to_register"
+            app:destination="@id/register"
+            app:enterAnim="@anim/slide_up"
+            app:exitAnim="@anim/fade_exit"
+            app:popEnterAnim="@anim/fade_enter"
+            app:popExitAnim="@anim/slide_up_reverse" />
+        <action
+            android:id="@+id/action_loginSignUp_to_home4"
+            app:destination="@id/home4" />
+    </fragment>
+    <fragment
+        android:id="@+id/login"
+        android:name="com.example.golush.ui.Login"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_login_to_home"
+            app:destination="@id/home4" />
+    </fragment>
+    <fragment
+        android:id="@+id/register"
+        android:name="com.example.golush.ui.Register"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register">
+        <action
+            android:id="@+id/action_register_to_select_plan"
+            app:destination="@id/selectPlan"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/home4"
+        android:name="com.example.golush.ui.Home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_home4_to_recipeDetail"
+            app:destination="@id/recipeDetail" />
+        <action
+            android:id="@+id/action_home4_to_fav"
+            app:destination="@id/fav" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectPlan"
+        android:name="com.example.golush.ui.SelectPlan"
+        android:label="fragment_select_plan"
+        tools:layout="@layout/fragment_select_plan">
+        <action
+            android:id="@+id/action_selectPlan_to_userAddress"
+            app:destination="@id/userAddress" />
+    </fragment>
+    <fragment
+        android:id="@+id/userAddress"
+        android:name="com.example.golush.ui.UserAddress"
+        android:label="fragment_user_address"
+        tools:layout="@layout/fragment_user_address">
+        <action
+            android:id="@+id/action_userAddress_to_paymnet"
+            app:destination="@id/payment" />
+    </fragment>
+    <fragment
+        android:id="@+id/payment"
+        android:name="com.example.golush.ui.Payment"
+        android:label="fragment_payment"
+        tools:layout="@layout/fragment_paymnet">
+        <action
+            android:id="@+id/action_payment_to_paymentSuccess"
+            app:destination="@id/paymentSuccess" />
+    </fragment>
+    <fragment
+        android:id="@+id/recipeDetail"
+        android:name="com.example.golush.ui.RecipeDetail"
+        android:label="fragment_recipe_detail"
+        tools:layout="@layout/fragment_recipe_detail">
+        <action
+            android:id="@+id/action_recipeDetail_to_steps"
+            app:destination="@id/steps" />
+    </fragment>
+    <fragment
+        android:id="@+id/fav"
+        android:name="com.example.golush.ui.Fav"
+        android:label="fragment_fav"
+        tools:layout="@layout/fragment_fav">
+        <action
+            android:id="@+id/action_fav_to_paymentSuccess"
+            app:destination="@id/paymentSuccess" />
+    </fragment>
+    <fragment
+        android:id="@+id/steps"
+        android:name="com.example.golush.ui.Steps"
+        android:label="fragment_steps"
+        tools:layout="@layout/fragment_steps" />
+    <fragment
+        android:id="@+id/paymentSuccess"
+        android:name="com.example.golush.ui.PaymentSuccess"
+        android:label="fragment_payment_success"
+        tools:layout="@layout/fragment_payment_success">
+        <action
+            android:id="@+id/action_paymentSuccess_to_login"
+            app:destination="@id/login" />
+        <action
+            android:id="@+id/action_paymentSuccess_to_home4"
+            app:destination="@id/home4" />
+    </fragment>
+    <fragment
+        android:id="@+id/testProfile"
+        android:name="com.example.golush.ui.TestProfile"
+        android:label="fragment_test_profile"
+        tools:layout="@layout/fragment_test_profile" />
+</navigation>

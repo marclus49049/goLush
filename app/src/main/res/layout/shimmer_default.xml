@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fadingEdge="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/shimmer_recipe_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="                                   "
+        android:background="@color/placeholder_bg"
+
+        android:fontFamily="@font/comfortaa_bold"
+
+        android:textColor="@color/colorText"
+
+
+        android:textSize="30sp"
+
+        android:layout_marginTop="20dp"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/shimmer_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="                                   "
+        android:background="@color/placeholder_bg"
+
+        android:fontFamily="@font/comfortaa"
+
+        android:textColor="@color/colorText"
+
+        android:textSize="20sp"
+
+        android:layout_marginTop="10dp"
+
+        app:layout_constraintTop_toBottomOf="@id/shimmer_recipe_name"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/shimmer_ingredients"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="                                   "
+        android:background="@color/placeholder_bg"
+
+        android:fontFamily="@font/comfortaa_bold"
+
+        android:textColor="@color/colorText"
+
+        android:textSize="20sp"
+
+        android:layout_marginTop="20dp"
+
+        app:layout_constraintTop_toBottomOf="@id/shimmer_time"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/shimmer_ingredients_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal"
+
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/shimmer_ingredients"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:fadingEdge="horizontal">
+
+        <include layout="@layout/shimmer_card" />
+
+        <include layout="@layout/shimmer_card" />
+
+        <include layout="@layout/shimmer_card" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
